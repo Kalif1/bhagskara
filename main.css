@@ -1,0 +1,119 @@
+/*COLORS ON SITE
+purple: #9e459a;
+grey text: #676767;
+purple button: #9f449b;
+black: #222222;
+*/
+
+		/*-------BASIC CLASS-------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*line-height: 1.4em;*/
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
+}
+
+@font-face{
+	font-family: 'Existence-StencilLight';
+	src: url('Existence-Light.otf');
+	font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-size: 15px;
+	font-family: 'Lato', sans-serif;
+}
+
+.container{
+	width: 1300px;
+	/*background-color: red;*/
+	margin: 0 auto;
+}
+
+		/*-------SHAPES AND LOOK OF HEXAGONS SMALL AND BIG-------*/
+.hexagon-big{
+	width: 100px;
+	height: 55px;
+	background: blue;
+	position: relative;
+	float: left;
+}
+.hexagon-big:before {
+	content: "";
+	position: absolute;
+	top: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid red;
+}
+.hexagon-big:after {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid red;
+}
+
+
+
+		/*------------MAIN PAGE ---------*/
+.main-page{
+	background-image: url(img/main_background.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	height: 650px;
+	/*filter: brightness(0.7);*/
+}
+
+h1{
+	font-family: Existence-StencilLight, sans-serif;
+	color: white;
+	font-size: 2.9em;
+	text-align: center;
+	padding-top: 60px;
+	letter-spacing: 1.3px;
+}
+
+h1 > span{
+	color: #9f449b;
+}
+
+.background-color{
+	background-color: rgba(0,0,0,0.4);
+	height: 100%;
+}
+
+.main-page-about{
+	color: white;
+	margin-top: 60px;
+	text-align: center;
+
+}
+
+.main-page-about p:first-of-type{
+	font-size: 2em;
+	font-weight: 300;
+}
+
+.main-page-about p:nth-of-type(2){
+	font-size: 0.9em;
+	font-weight: 300;
+	margin-top: 12px;
+	letter-spacing: 0.9px;
+}
+
+.single-hexagon-button{
+	margin-bottom: 50px;
+}
