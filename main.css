@@ -31,41 +31,24 @@ body{
 
 .container{
 	width: 1300px;
-	/*background-color: red;*/
 	margin: 0 auto;
 }
 
 		/*-------SHAPES AND LOOK OF HEXAGONS SMALL AND BIG-------*/
-.hexagon-big{
-	width: 100px;
-	height: 55px;
-	background: blue;
-	position: relative;
-	float: left;
-}
-.hexagon-big:before {
-	content: "";
-	position: absolute;
-	top: -25px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 25px solid red;
-}
-.hexagon-big:after {
-	content: "";
-	position: absolute;
-	bottom: -25px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-top: 25px solid red;
+svg > path{
+	stroke: #FFFFFF;
+	fill: rgba(255, 255, 255, 0.1);
 }
 
+svg{
+	width: 120px;
+	height: 120px;
+}
+
+.hexagon-button-arrow > svg{
+	width: 60px;
+	height: 60px;
+}
 
 
 		/*------------MAIN PAGE ---------*/
@@ -74,7 +57,7 @@ body{
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	height: 650px;
-	/*filter: brightness(0.7);*/
+/*	filter: opacity(80%);*/
 }
 
 h1{
@@ -99,7 +82,6 @@ h1 > span{
 	color: white;
 	margin-top: 60px;
 	text-align: center;
-
 }
 
 .main-page-about p:first-of-type{
@@ -114,6 +96,76 @@ h1 > span{
 	letter-spacing: 0.9px;
 }
 
+.hexagon-buttons-nav p{
+	color: white;
+}
+
+.two-hexagon-buttons{
+	margin-left: 125px;
+	float: left;
+	position: relative;
+}
+
+.two-hexagon-buttons:nth-of-type(1){
+	top: 140px;
+	left: 90px;
+}
+
+.two-hexagon-buttons:nth-of-type(2){
+	right: 20px;
+}
+
+.two-hexagon-buttons:nth-of-type(3){
+	top: 140px;
+	right: 120px;
+}
+
 .single-hexagon-button{
 	margin-bottom: 50px;
+	margin-left: 15px;
+	margin-top: 50px;
+	float: left;
+	position: relative;
 }
+
+.single-hexagon-button:hover svg path, .hexagon-button-arrow:hover svg path{
+	fill: #9f449b;
+	stroke: #9f449b;
+	cursor: pointer;
+}
+
+.single-hexagon-button:hover i, .single-hexagon-button:hover p, .hexagon-button-arrow:hover i{
+	cursor: pointer;
+}
+
+.single-hexagon-button p{
+	position: absolute;
+	bottom: 25px;
+	left: 40px;
+	margin: 0 auto;
+}
+
+.single-hexagon-button i{
+	color: white;
+	font-size: 52px;
+	position: absolute;
+	bottom: 50px;
+	left: 38px;
+}
+
+.hexagon-button-arrow{
+	position: relative;
+	right: 575px;
+	top: 300px;
+}
+
+.hexagon-button-arrow i{
+	color: white;
+	font-size: 23px;
+	position: relative;
+	right: 43px;
+	bottom: 20px;
+}
+
+
+
