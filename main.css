@@ -279,3 +279,11 @@ h1 > span{
 	margin-top: 15px;
 	letter-spacing: 2.5px;
 }
+
+.single-hexagon-info-page:hover svg path{
+	stroke: #9f449b;
+}
+
+.single-hexagon-info-page:hover i, .single-hexagon-info-page:hover p{
+	color: #9f449b;
+}
