@@ -34,6 +34,14 @@ body{
 	margin: 0 auto;
 }
 
+.float-left{
+	float: left;
+}
+
+.float-right{
+	float: right;
+}
+
 		/*-------SHAPES AND LOOK OF HEXAGONS SMALL AND BIG-------*/
 svg > path{
 	stroke: #FFFFFF;
@@ -128,7 +136,7 @@ h1 > span{
 	position: relative;
 }
 
-.single-hexagon-button:hover svg path, .hexagon-button-arrow:hover svg path{
+.single-hexagon-button svg path:hover, .hexagon-button-arrow svg path:hover, .single-hexagon-button i:hover ~ svg path{
 	fill: #9f449b;
 	stroke: #9f449b;
 	cursor: pointer;
@@ -137,6 +145,8 @@ h1 > span{
 .single-hexagon-button:hover i, .single-hexagon-button:hover p, .hexagon-button-arrow:hover i{
 	cursor: pointer;
 }
+
+
 
 .single-hexagon-button p{
 	position: absolute;
@@ -169,3 +179,103 @@ h1 > span{
 
 
 
+		/*--------------INFO PAGE-------------*/
+.grey-info-page-background-wrapper, .white-menu-background{
+	width: 1150px;
+	margin: 0 auto;
+}
+
+.mini-logo{
+	font-family: Existence-StencilLight, sans-serif;
+	color: #676767;
+	font-size: 1.4em;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	letter-spacing: 1.3px;
+}
+
+.mini-logo span{
+	color: #9f449b;
+}
+
+.white-menu-background nav{
+	margin-top: 30px;
+}
+
+.white-menu-background ul{
+	list-style: none;
+}
+
+.white-menu-background li{
+	color: #676767;
+	margin-left: 18px;
+	font-size: 0.9em;
+}
+
+.white-menu-background li:hover{
+	color: #9e459a;
+	cursor: pointer;
+}
+
+.grey-info-page-background{
+	background-color: #eeeeee;
+	height: 500px;
+}
+
+.single-hexagon-info-page{
+	width: 230px;
+	/*height: 400px;*/
+	margin-top: 105px;
+	text-align: center;
+	position: relative;
+}
+
+.single-hexagon-info-page:nth-of-type(n+2){
+	margin-left: 75px;
+}
+
+.single-hexagon-info-page svg{
+	position: relative;
+	display: block;
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+}
+
+.single-hexagon-info-page svg > path{
+	stroke: #ccd0d2;
+}
+
+.single-hexagon-info-page i{
+	color: #ccd0d2;
+	font-size: 52px;
+	position: absolute;
+	top: 30px;
+	left: 90px;
+}
+
+.single-hexagon-info-page:nth-of-type(2) i{
+	left: 87px;
+}
+
+.single-hexagon-info-page:nth-of-type(4) i{
+	left: 102px;
+	top: 28px;
+	font-size: 64px;
+}
+
+.single-hexagon-info-page p{
+	color: #676767;
+}
+
+.single-hexagon-info-page p:nth-of-type(1){
+	font-size: 1.2em;
+	margin-top: 15px;
+}
+
+.single-hexagon-info-page p:nth-of-type(2){
+	font-size: 0.9em;
+	margin-top: 15px;
+	letter-spacing: 2.5px;
+}
