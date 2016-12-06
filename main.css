@@ -502,3 +502,31 @@ h1 > span{
 	height: 25px;
 	text-align: center;
 }
+
+.our-team-i{
+	position: relative;
+	right: -95px;
+	top: 25px;
+}
+
+
+
+		/*----------------------------OUR SKILLS------------------*/
+.progress-bars-wrapper{
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.progress-bars-section {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.progress-bars-section p{
+	text-align: left;
+}
+
+.progress-bars-section p > span{
+	text-align: right;
+}
