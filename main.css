@@ -42,6 +42,57 @@ body{
 	float: right;
 }
 
+		/*----------H2 LOOK-------------*/
+.h2-borders-colors{
+	margin-top: 80px;
+	margin-bottom: 80px;
+	text-align: center;
+	font-family: Existence-StencilLight;
+	font-size: 1.9em;
+	color: #676767;
+	position: relative;
+}
+
+.h2-borders-colors span{
+	color: #9f449b;
+}
+
+.h2-borders-colors:before{
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border-left: 1.5px solid #9f449b;
+	border-bottom: 1.5px solid #9f449b;
+	position: absolute;
+	top: 25px;
+	left: 570px;
+}
+
+.h2-borders-colors:after{
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border-right: 1.5px solid #9f449b;
+	border-top: 1.5px solid #9f449b;
+	position: absolute;
+	bottom: 25px;
+	right: 570px;
+}
+
+
+		/*---------------PURPLE BUTTON-----------*/
+.purple-button{
+	width: 130px;
+	height: 40px;
+	color: white;
+	background-color: #9f449b;
+	border-radius: 3px;
+	border-bottom: 3px solid #6b2e68;
+}
+
+
 		/*-------SHAPES AND LOOK OF HEXAGONS SMALL AND BIG-------*/
 svg > path{
 	stroke: #FFFFFF;
@@ -59,7 +110,7 @@ svg{
 }
 
 
-		/*------------MAIN PAGE ---------*/
+		/*------------------MAIN PAGE ---------------------*/
 .main-page{
 	background-image: url(img/main_background.jpg);
 	background-size: 100% auto;
@@ -146,8 +197,6 @@ h1 > span{
 	cursor: pointer;
 }
 
-
-
 .single-hexagon-button p{
 	position: absolute;
 	bottom: 25px;
@@ -179,7 +228,7 @@ h1 > span{
 
 
 
-		/*--------------INFO PAGE-------------*/
+		/*-----------------------INFO PAGE----------------------*/
 .grey-info-page-background-wrapper, .white-menu-background{
 	width: 1150px;
 	margin: 0 auto;
@@ -286,4 +335,170 @@ h1 > span{
 
 .single-hexagon-info-page:hover i, .single-hexagon-info-page:hover p{
 	color: #9f449b;
+}
+
+
+
+		/*----------------------ABOUT US------------------------*/
+.about-me-center-div{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.about-us img{
+	height: 350px; 
+	position: relative;
+	bottom: 50px;
+	left: 50px;
+}
+
+.about-me-article{
+	width: 400px;
+	margin-left: 50px;
+}
+
+.about-me-article p{
+	letter-spacing: 1px;
+	line-height: 30px;
+	color: #676767;
+	font-size: 14px;
+}
+
+.about-me-article button{
+	margin-top: 50px;
+	margin-bottom: 150px;
+}
+
+
+
+		/*---------------------QUOTE-----------------*/
+.quote{
+	background-image: url(img/quote_background.jpg);
+	background-size: 100% auto;
+	height: 350px;
+}
+
+.quote svg{
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+}
+
+.quote i{
+	width: 20px;
+	display: block;
+	margin: 0 auto;
+	font-size: 50px;
+	color: white;
+	position: relative;
+	right: 17px;
+	top: 12px;
+}
+
+.quote p{
+	color: white;
+	font-size: 31px;
+	font-weight: 400;
+	text-align: center;
+	position: relative;
+	top: 65px;
+}
+
+
+
+		/*-------------OUR TEAM--------------*/
+.our-team h2{
+	margin-bottom: 60px;
+}
+
+.description-of-team-arrows{
+	width: 85px;
+	margin: 0 auto;
+}
+
+.description-of-team-arrows svg{
+	height: 40px;
+	width: 40px;
+}
+
+.description-of-team-arrows svg path{
+	stroke: #9f449b;
+	stroke-width: 14;
+}
+
+.description-of-team-arrows p{
+	color: #9f449b;
+	font-size: 30px;
+	position: relative;
+}
+
+.description-of-team-arrows p:nth-of-type(1){
+	color: #9f449b;
+	font-size: 30px;
+	bottom: 42px;
+	left: 10px;
+}
+
+.description-of-team-arrows p:nth-of-type(2){
+	color: #9f449b;
+	font-size: 30px;
+	bottom: 78px;
+	left: 54px;
+}
+
+.our-team-container{
+	width: 800px;
+	margin: 0 auto;
+}
+
+.description-of-team{
+	width: 33.33%;
+	margin-bottom: 90px;
+}
+
+.description-of-team img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin: 0 auto;
+	display: block;
+	/*background-color: grey;*/
+}
+
+/*.description-of-team img:hover:before{
+	content: "";
+	width: 50px;
+	height: 50px;
+	background-color: red;
+}*/
+
+.description-of-team img:hover{
+	transform: scale(1.3);
+}
+
+.description-of-team > p{
+	text-align: center;
+}
+
+.description-of-team > p:nth-of-type(1){
+	margin-top: 55px;
+	color: #373737;
+	font-size: 1.2em;
+}
+
+.description-of-team > p:nth-of-type(2){
+	font-size: 0.7em;
+	margin-top: 15px;
+}
+
+.description-of-team i{
+	font-size: 1.5em;
+	color: #373737;
+	border: 1px solid #373737;
+	border-radius: 50%;
+	padding: 5px;
+	width: 25px;
+	height: 25px;
+	text-align: center;
 }
