@@ -527,6 +527,33 @@ h1 > span{
 	text-align: left;
 }
 
-.progress-bars-section p > span{
-	text-align: right;
+.single-progress-bar{
+	height: 15px;
+	width: 0.5px;
+	/*background-color: black;*/
+}
+
+.progress-bars-section:nth-of-type(1) .single-progress-bar{
+	position: relative;
+	left: 50px;
+}
+
+.progress-bars-section:nth-of-type(1) .single-progress-bar:before{
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 15px;
+	background-color: #9f449b;
+	position: relative;
+	right: 50px;
+}
+
+.progress-bars-section:nth-of-type(1) .single-progress-bar:after{
+	content: "";
+	display: inline-block;
+	width: 150px;
+	height: 15px;
+	background-color: #f0f0f0;
+	position: relative;
+	bottom: 18px;
 }
