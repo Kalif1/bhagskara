@@ -92,6 +92,10 @@ body{
 	border-bottom: 3px solid #6b2e68;
 }
 
+.purple-button:hover{
+	cursor: pointer;
+}
+
 
 		/*-------SHAPES AND LOOK OF HEXAGONS SMALL AND BIG-------*/
 svg > path{
@@ -463,15 +467,8 @@ h1 > span{
 	border-radius: 50%;
 	margin: 0 auto;
 	display: block;
-	/*background-color: grey;*/
+	background-color: grey;
 }
-
-/*.description-of-team img:hover:before{
-	content: "";
-	width: 50px;
-	height: 50px;
-	background-color: red;
-}*/
 
 .description-of-team img:hover{
 	transform: scale(1.3);
@@ -512,15 +509,18 @@ h1 > span{
 
 
 		/*----------------------------OUR SKILLS------------------*/
+.our-skills{
+	margin-bottom: 80px;
+}
+
 .progress-bars-wrapper{
-	width: 800px;
+	width: 700px;
 	margin: 0 auto;
-	text-align: center;
 }
 
 .progress-bars-section {
-	width: 50%;
-	margin: 0 auto;
+	width: 350px;
+	margin: 15px auto;
 }
 
 .progress-bars-section p{
@@ -538,22 +538,88 @@ h1 > span{
 	left: 50px;
 }
 
-.progress-bars-section:nth-of-type(1) .single-progress-bar:before{
+		/*-----------PURPLE BAR---------*/
+.progress-bars-section .single-progress-bar:before{
 	content: "";
 	display: inline-block;
-	width: 50px;
 	height: 15px;
 	background-color: #9f449b;
 	position: relative;
-	right: 50px;
 }
-
-.progress-bars-section:nth-of-type(1) .single-progress-bar:after{
+	/*-------------------LIGHT GREY BAR--------------*/
+.progress-bars-section .single-progress-bar:after{
 	content: "";
 	display: inline-block;
-	width: 150px;
 	height: 15px;
 	background-color: #f0f0f0;
 	position: relative;
+}
+
+.progress-bars-section .single-progress-bar:before{
+	width: 50px;
+	right: 50px;
+}
+
+.progress-bars-section .single-progress-bar:after{
+	width: 150px;
 	bottom: 18px;
+}
+
+
+
+		/*-------------------FOOTER-------------*/
+.contact .h2-borders-colors:before{
+	top: 25px;
+	left: 550px;
+}
+
+.contact .h2-borders-colors:after{
+	bottom: 25px;
+	right: 550px;
+}
+
+.contact form{
+	width: 50%;
+}
+
+.contact-info{
+	width: 50%;
+}
+
+.contact input[type="text"]{
+	width: 280px;
+	height: 40px;
+	border: 1px solid #808080;
+	display: block;
+	margin-bottom: 20px;
+	margin-left: 250px;
+	padding-left: 15px;
+}
+
+.contact input[type="text"]:last-of-type{
+	height: 120px;
+}
+
+input:last-of-type::-webkit-input-placeholder,
+input:last-of-type::-moz-placeholder,
+{
+	position: relative;
+	bottom: 40px;
+}
+
+.contact button[class="purple-button"]{
+	margin-left: 250px;
+	margin-bottom: 80px;
+}
+
+.contact-info p:first-of-type{
+	width: 350px;
+	color: #676767;
+	margin-bottom: 15px;
+}
+
+.contact-info p:nth-of-type(2), .contact-info p:nth-of-type(3){
+	color: black;
+	font-weight: 700;
+	margin-bottom: 15px;
 }
